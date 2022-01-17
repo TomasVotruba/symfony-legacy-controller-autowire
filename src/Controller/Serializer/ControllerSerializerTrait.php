@@ -27,9 +27,7 @@ trait ControllerSerializerTrait
     protected function json($data, int $status = 200, array $headers = [], array $context = []): JsonResponse
     {
         if ($this->serializer) {
-            $data = $this->serializer->serialize($data, 'json', array_merge([
-                'json_encode_options' => JsonResponse::DEFAULT_ENCODING_OPTIONS,
-            ], $context));
+            $data = $this->serializer->serialize($data, 'json', $context);
         }
 
         return new JsonResponse($data, $status, $headers, true);
