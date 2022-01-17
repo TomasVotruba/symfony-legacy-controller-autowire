@@ -29,7 +29,7 @@ final class ControllerFinder implements ControllerFinderInterface
         foreach ($dirs as $dir) {
             $robot->addDirectory($dir);
         }
-        $robot->ignoreDirs .= ', Tests';
+        $robot->ignoreDirs[] = 'Tests';
         $robot->acceptFiles = '*' . $this->namePart . '.php';
         $robot->rebuild();
 
@@ -46,7 +46,7 @@ final class ControllerFinder implements ControllerFinderInterface
     private function prepareServiceKeys(array $controllerClasses): array
     {
         $controllerClassesWithKeys = [];
-        foreach ($controllerClasses as $key => $controllerClass) {
+        foreach ($controllerClasses as $controllerClass) {
             $key = strtr(strtolower($controllerClass), [
                 '\\' => '.',
             ]);
