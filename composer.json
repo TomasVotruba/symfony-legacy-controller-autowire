@@ -1,5 +1,6 @@
 {
     "name": "tomasvotruba/symfony-legacy-controller-autowire",
+    "license": "MIT",
     "description": "Autowire Controllers via constructor without pain in Symfony 2.8",
     "require": {
         "php": "^7.1",
