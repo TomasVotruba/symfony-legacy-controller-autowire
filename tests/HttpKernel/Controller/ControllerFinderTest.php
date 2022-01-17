@@ -31,7 +31,7 @@ final class ControllerFinderTest extends TestCase
         $this->assertContains(SomeController::class, $controllers);
 
         $this->assertArrayHasKey(
-            'symplify.controllerautowire.tests.httpkernel.controller.controllerfindersource.somecontroller',
+            'tomasvotruba.symfonylegacycontrollerautowire.tests.httpkernel.controller.controllerfindersource.somecontroller',
             $controllers
         );
     }

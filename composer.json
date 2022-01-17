@@ -22,7 +22,8 @@
         "symplify/easy-coding-standard": "^10.0.11",
         "phpstan/phpstan": "^1.4",
         "twig/twig": "^2.14",
-        "doctrine/common": "^2.9"
+        "doctrine/common": "^2.9",
+        "tracy/tracy": "^2.9"
     },
     "autoload": {
         "psr-4": {

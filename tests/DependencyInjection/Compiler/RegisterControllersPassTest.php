@@ -64,7 +64,7 @@ final class RegisterControllersPassTest extends TestCase
 
         $controllerDefinition = new Definition(SomeController::class);
         $containerBuilder->setDefinition(
-            'symplify.controllerautowire.tests.dependencyinjection.'
+            'tomasvotruba.symfonylegacycontrollerautowire.tests.dependencyinjection.'
                 . 'compiler.registercontrollerspasssource.somecontroller',
             $controllerDefinition
         );

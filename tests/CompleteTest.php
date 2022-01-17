@@ -80,10 +80,10 @@ final class CompleteTest extends TestCase
     public function testGetControllerWithTrait(): void
     {
         $request = $this->createRequestWithControllerAttribute(
-            'symplify.controllerautowire.tests.completetestsource.scan.traitawarecontroller:someAction'
+            'tomasvotruba.symfonylegacycontrollerautowire.tests.completetestsource.scan.traitawarecontroller:someAction'
         );
 
-        /** @var TraitAwareController|ControllerTrait $controller */
+        /** @var TraitAwareController&ControllerTrait $controller */
         $controller = $this->controllerResolver->getController($request)[0];
 
         $this->assertInstanceOf(TraitAwareController::class, $controller);
