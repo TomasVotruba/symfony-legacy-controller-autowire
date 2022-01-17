@@ -23,7 +23,8 @@
         "phpstan/phpstan": "^1.4",
         "twig/twig": "^2.14",
         "doctrine/common": "^2.9",
-        "tracy/tracy": "2.7.*"
+        "tracy/tracy": "2.7.*",
+        "symplify/easy-ci": "^10.0"
     },
     "autoload": {
         "psr-4": {
