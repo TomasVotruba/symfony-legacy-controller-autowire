@@ -1,9 +1,6 @@
-# Controller Autowire for Symfony 2.8-3.2
+# Controller Autowire for Symfony 2.8
 
----
-
-[![Build Status](https://img.shields.io/travis/Symplify/ControllerAutowire/master.svg?style=flat-square)](https://travis-ci.org/Symplify/ControllerAutowire)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/Symplify/ControllerAutowire.svg?style=flat-square)](https://scrutinizer-ci.com/g/Symplify/ControllerAutowire)
+* ![](https://github.com/tomasvotruba/symfony-legacy-controller-autowire/actions/workflows/code_analysis.yaml/badge.svg)
 
 This bundle does only 2 things:
 
